@@ -17,7 +17,7 @@ const Navbar = () => {
     const newDarkMode = !darkMode;
     setDarkMode(newDarkMode);
     document.documentElement.classList.toggle('dark', newDarkMode);
-    localStorage.setItem('dark-mode', newDarkMode);
+    localStorage.setItem('dark-mode', newDarkMode.toString());
   };
 
   return (
